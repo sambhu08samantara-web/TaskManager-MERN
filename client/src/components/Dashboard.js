@@ -23,7 +23,7 @@ const fetchTasks = useCallback(async () => {
 
   try {
     const response = await axios.get(
-      "http://localhost:5000/api/tasks",
+      https://taskmanager-backend-iico.onrender.com,
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -53,7 +53,7 @@ const handleAddTask = async () => {
 
   try {
     await axios.post(
-      "http://localhost:5000/api/tasks",
+      https://taskmanager-backend-iico.onrender.com,
       {
         title: task,
         priority: priority,
@@ -82,7 +82,7 @@ const handleAddTask = async () => {
 const handleComplete = async (id) => {
   try {
     await axios.put(
-      `http://localhost:5000/api/tasks/${id}`,
+      `https://taskmanager-backend-iico.onrender.com/api/tasks/${id}`,
       {},
       {
         headers: {
@@ -104,7 +104,7 @@ const handleDelete = async (id) => {
 
   try {
     await axios.delete(
-      `http://localhost:5000/api/tasks/${id}`,
+      `https://taskmanager-backend-iico.onrender.com/api/tasks/${id}`,
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -132,7 +132,7 @@ const handleDelete = async (id) => {
 const handleDeleteCompleted = async () => {
   try {
     await axios.delete(
-      "http://localhost:5000/api/tasks/completed/all",
+      "https://taskmanager-backend-iico.onrender.com/api/tasks/completed/all",
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -150,7 +150,7 @@ const handleDeleteCompleted = async () => {
 const handleSaveEdit = async () => {
   try {
     await axios.put(
-      `http://localhost:5000/api/tasks/${editingTask}`,
+      `https://taskmanager-backend-iico.onrender.com/api/tasks/${editingTask}`,
       {
         title: editTitle,
         priority: editPriority,

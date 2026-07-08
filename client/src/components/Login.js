@@ -14,7 +14,7 @@ function Login() {
       if (isLogin) {
         // Login
         const response = await axios.post(
-          "http://localhost:5000/api/auth/login",
+          https://taskmanager-backend-iico.onrender.com,
           {
             email,
             password,
@@ -27,7 +27,7 @@ function Login() {
       } else {
         // Register
         await axios.post(
-          "http://localhost:5000/api/auth/register",
+          https://taskmanager-backend-iico.onrender.com,
           {
             name,
             email,

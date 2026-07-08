@@ -23,7 +23,7 @@ const fetchTasks = useCallback(async () => {
 
   try {
     const response = await axios.get(
-      https://taskmanager-backend-iico.onrender.com,
+      "https://taskmanager-backend-iico.onrender.com/api/tasks",
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -53,7 +53,7 @@ const handleAddTask = async () => {
 
   try {
     await axios.post(
-      https://taskmanager-backend-iico.onrender.com,
+      "https://taskmanager-backend-iico.onrender.com/api/tasks",
       {
         title: task,
         priority: priority,

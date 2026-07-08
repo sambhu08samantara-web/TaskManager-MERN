@@ -1,244 +1,357 @@
-# Task Manager - MERN Stack Project
+# Task Manager - MERN Stack
 
-## Project Overview
+## 📌 Project Description
 
-Task Manager is a full-stack web application developed using the MERN Stack (MongoDB, Express.js, React.js, and Node.js). It helps users organize and manage their daily tasks efficiently. The application provides secure user authentication and allows users to create, update, complete, search, filter, sort, and delete tasks through a responsive and user-friendly interface.
+Task Manager is a Full Stack MERN (MongoDB, Express.js, React.js, Node.js) web application that helps users manage their daily tasks efficiently.
 
----
+The application provides secure user authentication using JWT (JSON Web Token), allowing each user to manage only their own tasks.
 
-## Technologies Used
-
-### Frontend
-
-* React.js
-* Axios
-* React Toastify
-* HTML5
-* CSS3
-* JavaScript (ES6)
-
-### Backend
-
-* Node.js
-* Express.js
-* MongoDB
-* Mongoose
-* JWT (JSON Web Token)
-* bcryptjs
-* dotenv
-* CORS
+Users can:
+- Register and Login securely
+- Add new tasks
+- Edit existing tasks
+- Mark tasks as completed
+- Delete tasks
+- Delete all completed tasks
+- Search tasks
+- Filter tasks
+- Sort tasks by priority, due date, and creation date
+- View task statistics (Total, Completed, Pending)
 
 ---
 
-## Features
+# 👨‍💻 Developer
 
-### User Authentication
+**Name:** SAMBHU Pr. SAMANTARA
 
-* User Registration
-* User Login
-* Secure JWT Authentication
-* Protected Routes
-* Logout
-
-### Task Management
-
-* Add New Task
-* Edit Existing Task
-* Delete Individual Task
-* Mark Task as Completed
-* Delete All Completed Tasks
-
-### Task Organization
-
-* Search Tasks
-* Filter Tasks (All, Pending, Completed)
-* Sort Tasks
-
-  * Newest
-  * Oldest
-  * Priority
-  * Due Date
-
-### Additional Features
-
-* Task Priority (High, Medium, Low)
-* Due Date Selection
-* Dashboard Statistics
-
-  * Total Tasks
-  * Completed Tasks
-  * Pending Tasks
-* Toast Notifications
-* Responsive User Interface
+GitHub:
+https://github.com/sambhu08samantara-web
 
 ---
 
-## Project Structure
+# 🚀 Tech Stack
+
+## Frontend
+- React.js
+- Axios
+- React Toastify
+- CSS3
+- HTML5
+
+## Backend
+- Node.js
+- Express.js
+
+## Database
+- MongoDB Atlas
+- Mongoose
+
+## Authentication
+- JWT (JSON Web Token)
+- bcryptjs
+
+## Deployment
+- Frontend : Vercel
+- Backend : Render
+- Database : MongoDB Atlas
+
+---
+
+# 📂 Project Structure
 
 ```
-TaskManager-MERN
+TaskManager-MERN/
 │
-├── client
-│   ├── public
-│   ├── src
-│   │   ├── components
-│   │   ├── pages
-│   │   ├── App.js
-│   │   ├── index.js
-│   │   └── index.css
-│   └── package.json
+├── client/
+│   ├── public/
+│   ├── src/
+│   ├── package.json
 │
-├── server
-│   ├── config
-│   ├── controllers
-│   ├── middleware
-│   ├── models
-│   ├── routes
+├── server/
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
 │   ├── server.js
-│   └── package.json
+│   ├── package.json
 │
-└── README.md
+├── README.md
 ```
 
 ---
 
-## Installation
-
-### Clone the Repository
-
-```bash
-git clone <https://github.com/sambhu08samantara-web/TaskManager-MERN.git>
-```
-
----
-
-### Install Backend Dependencies
-
-```bash
-cd server
-npm install
-```
-
----
-
-### Install Frontend Dependencies
-
-```bash
-cd client
-npm install
-```
-
----
-
-## Environment Variables
-
-Create a `.env` file inside the **server** folder.
-
-Example:
-
-```
-PORT=5000
-
-MONGO_URI=your_mongodb_connection_string
-
-JWT_SECRET=your_secret_key
-```
-
----
-
-## Running the Project
-
-### Start Backend
-
-```bash
-cd server
-npm start
-```
-
----
-
-### Start Frontend
-
-```bash
-cd client
-npm start
-```
-
----
-
-## Application Workflow
-
-1. User registers a new account.
-2. User logs in securely.
-3. JWT token is generated.
-4. User can:
-
-   * Add tasks
-   * Edit tasks
-   * Complete tasks
-   * Delete tasks
-   * Search tasks
-   * Filter tasks
-   * Sort tasks
-5. Dashboard updates automatically.
-
----
-
-## API Endpoints
+# ✨ Features
 
 ### Authentication
 
-| Method | Endpoint            | Description   |
-| ------ | ------------------- | ------------- |
-| POST   | /api/users/register | Register User |
-| POST   | /api/users/login    | Login User    |
+- User Registration
+- User Login
+- JWT Authentication
+- Protected Routes
 
-### Tasks
+### Task Management
 
-| Method | Endpoint                 | Description            |
-| ------ | ------------------------ | ---------------------- |
-| GET    | /api/tasks               | Get All Tasks          |
-| POST   | /api/tasks               | Add Task               |
-| PUT    | /api/tasks/:id           | Update Task            |
-| DELETE | /api/tasks/:id           | Delete Task            |
-| DELETE | /api/tasks/completed/all | Delete Completed Tasks |
+- Add Task
+- Edit Task
+- Delete Task
+- Mark Task Completed
+- Delete Completed Tasks
 
----
+### Task Organization
 
-## Future Enhancements
+- Search Tasks
+- Filter Tasks
+- Sort by:
+  - Newest
+  - Oldest
+  - Priority
+  - Due Date
 
-* Dark Mode
-* Task Categories
-* Task Reminders
-* File Attachments
-* Email Notifications
-* Calendar Integration
+### Dashboard
 
----
-
-## Learning Outcomes
-
-This project helped in understanding:
-
-* MERN Stack Development
-* REST API Development
-* MongoDB Database Operations
-* JWT Authentication
-* React Hooks
-* State Management
-* CRUD Operations
-* Responsive UI Design
-* Client-Server Communication
+- Total Tasks
+- Completed Tasks
+- Pending Tasks
 
 ---
 
-## Conclusion
+# ⚙️ Installation
 
-The Task Manager application successfully demonstrates a complete MERN Stack CRUD application with secure authentication and modern task management features. It provides users with an efficient platform to organize daily activities while showcasing full-stack web development concepts and best practices.
+## Clone Repository
+
+```bash
+git clone https://github.com/sambhu08samantara-web/TaskManager-MERN.git
+```
+
+Go inside project
+
+```bash
+cd TaskManager-MERN
+```
 
 ---
 
-## Developed By
+## Backend Setup
 
-**Sambhu Prasad Samantara**
-B.Tech CSE
+```bash
+cd server
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Create a `.env` file
+
+```env
+PORT=5000
+
+MONGO_URI=YOUR_MONGODB_CONNECTION_STRING
+
+JWT_SECRET=YOUR_SECRET_KEY
+```
+
+Run Backend
+
+```bash
+npm run dev
+```
+
+---
+
+## Frontend Setup
+
+Open another terminal
+
+```bash
+cd client
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run frontend
+
+```bash
+npm start
+```
+
+Frontend runs on
+
+```
+http://localhost:3000
+```
+
+Backend runs on
+
+```
+http://localhost:5000
+```
+
+---
+
+# 📡 API Documentation
+
+## Authentication APIs
+
+### Register User
+
+```
+POST /api/auth/register
+```
+
+Request
+
+```json
+{
+  "name": "John",
+  "email": "john@example.com",
+  "password": "123456"
+}
+```
+
+---
+
+### Login User
+
+```
+POST /api/auth/login
+```
+
+Request
+
+```json
+{
+  "email": "john@example.com",
+  "password": "123456"
+}
+```
+
+Returns
+
+```json
+{
+  "token": "JWT_TOKEN"
+}
+```
+
+---
+
+## Task APIs
+
+### Get All Tasks
+
+```
+GET /api/tasks
+```
+
+---
+
+### Add Task
+
+```
+POST /api/tasks
+```
+
+Request
+
+```json
+{
+  "title": "Complete Project",
+  "priority": "High",
+  "dueDate": "2026-07-20"
+}
+```
+
+---
+
+### Update Task
+
+```
+PUT /api/tasks/:id
+```
+
+---
+
+### Delete Task
+
+```
+DELETE /api/tasks/:id
+```
+
+---
+
+### Delete Completed Tasks
+
+```
+DELETE /api/tasks/completed/all
+```
+
+---
+
+# 🔒 Authentication
+
+All Task APIs require
+
+```
+Authorization: Bearer YOUR_JWT_TOKEN
+```
+
+---
+
+# 🌐 Live Deployment
+
+## Frontend (Vercel)
+
+https://taskmanager-frontend-umber.vercel.app/
+
+## Backend (Render)
+
+https://taskmanager-backend-iico.onrender.com
+
+---
+
+# 📸 Screenshots
+
+- Login Page
+- Register Page
+- Dashboard
+- Add Task
+- Task List
+
+---
+
+# 📈 Future Improvements
+
+- Dark Mode
+- Email Notifications
+- File Attachments
+- Categories
+- Calendar View
+- Drag & Drop Tasks
+- Mobile App
+
+---
+
+# 📜 License
+
+This project is developed for educational purposes as a Full Stack MERN Task Manager Project.
+
+---
+
+# 🙏 Acknowledgements
+
+- MongoDB Atlas
+- Express.js
+- React.js
+- Node.js
+- Render
+- Vercel
+- JWT
+- React Toastify
